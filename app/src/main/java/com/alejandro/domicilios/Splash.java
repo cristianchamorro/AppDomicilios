@@ -2,6 +2,7 @@ package com.alejandro.domicilios;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -21,5 +22,19 @@ public class Splash extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.mytransition);
         imageView.startAnimation(animation);
 
+        final Intent intent = new Intent(this, Intro.class);
+        Thread timer = new Thread(){
+            public void run(){
+                try {
+                    sleep(5000);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }finally {
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        };
+            timer.start();
     }
 }

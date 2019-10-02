@@ -2,13 +2,45 @@ package com.alejandro.domicilios;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.R.anim;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 public class Intro extends AppCompatActivity {
+
+    private TextView textView;
+    private Button button;
+    private ViewFlipper viewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+
+        textView = findViewById(R.id.tvtitulo);
+        button = findViewById(R.id.btncontinuar);
+        viewFlipper = findViewById(R.id.vf);
+
+        int imagenes [] = {R.drawable.tamales, R.drawable.hamburguesas,R.drawable.alcohol, R.drawable.pizza, R.drawable.empanadas, R.drawable.adhajdh, R.drawable.alcoholicas};
+
+       // for (int i = 0; i<imagenes.length; i++){
+       //     flipperImages(imagenes[i]);
+
+        for (int i: imagenes ){
+            flipperImages(i);
+        }
+    }
+    public void flipperImages (int i){
+        ImageView imageView  = new ImageView(this);
+        imageView.setBackgroundResource(i);
+        viewFlipper.addView(imageView);
+        viewFlipper.setFlipInterval(2000);
+        viewFlipper.setAutoStart(true);
+        viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
+        viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
+
     }
 }

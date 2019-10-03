@@ -1,9 +1,13 @@
 package com.alejandro.domicilios;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.R.anim;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +19,7 @@ public class Intro extends AppCompatActivity {
     private Button button;
     private ViewFlipper viewFlipper;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +38,13 @@ public class Intro extends AppCompatActivity {
             flipperImages(i);
         }
     }
+    public void continuar (View view){
+        Intent intent = new Intent (this, MapsActivity.class);
+        startActivity(intent);
+
+    }
+
+
     public void flipperImages (int i){
         ImageView imageView  = new ImageView(this);
         imageView.setBackgroundResource(i);
@@ -41,6 +53,7 @@ public class Intro extends AppCompatActivity {
         viewFlipper.setAutoStart(true);
         viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
-
     }
+
+
 }

@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
             android:text="CONTINUAR"
+            android:onClick="continuar"
             android:textSize="33dp" />
 
     </LinearLayout>

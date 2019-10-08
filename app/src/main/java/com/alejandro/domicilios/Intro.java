@@ -49,7 +49,7 @@ public class Intro extends AppCompatActivity {
         ImageView imageView  = new ImageView(this);
         imageView.setBackgroundResource(i);
         viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(2000);
+        viewFlipper.setFlipInterval(1000);
         viewFlipper.setAutoStart(true);
         viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);

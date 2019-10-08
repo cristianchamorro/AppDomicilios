@@ -1,7 +1,24 @@
 <resources>
     <string name="app_name">Domicilios</string>
+    <string name="continuar">Continuar</string>
+    <string name="confirmar">Confirmar</string>
     <string name="title">Domicilios Food Beer+</string>
     <string name="description">Domicilios Food Beer+ es un aplicativo dondre podras encontrar una gran variedad gastronomica, desde restaurantes que ofrecen platos tipicos de la region, hasta sitios populares de comidas rapidas, ademas de encontrar sitios de bebidas para no dar por finalizado esos momentos familiares y/o sociales por falta de tu bebida preferidad. </string>
+    <string name="inicioubicacion">Para Domicilios Food Beer+ es muy importante tú ubicacion exacta actualmente, ¿Podrias confirmar tu ubicación?</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_navegation_drawer">NavegationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">¡Bienvenido a Domicilios Food Beer+!</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Iniciar sesión/Registrarme</string>
 
 </resources>

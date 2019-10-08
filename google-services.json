@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "277925979491",
+    "firebase_url": "https://domicilios-2d9cd.firebaseio.com",
+    "project_id": "domicilios-2d9cd",
+    "storage_bucket": "domicilios-2d9cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277925979491:android:56135edbbf816912b21f56",
+        "android_client_info": {
+          "package_name": "com.alejandro.domicilios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277925979491-7d5g53df4mhgu8v5apd2ekid0f2gdoua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9rudpJ2LXHxYGoobZW00uktiX8Th9GWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277925979491-7d5g53df4mhgu8v5apd2ekid0f2gdoua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

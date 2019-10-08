@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "116805565001",
+    "firebase_url": "https://domicilios-ffce1.firebaseio.com",
+    "project_id": "domicilios-ffce1",
+    "storage_bucket": "domicilios-ffce1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116805565001:android:6eb22eec1486c029cedd98",
+        "android_client_info": {
+          "package_name": "com.alejandro.domicilios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116805565001-1pmtptu38dlpv3jhc8o0858rolrf93uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alejandro.domicilios",
+            "certificate_hash": "e32f9a75a4c1d55ada6965c6032d53fe95c4451a"
+          }
+        },
+        {
+          "client_id": "116805565001-5vp4a9tr51gr3mfhu3vrhav1reda9aha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxf6RT49Xvrtt3a2RbFgzKSWujyzKMb48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116805565001-5vp4a9tr51gr3mfhu3vrhav1reda9aha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

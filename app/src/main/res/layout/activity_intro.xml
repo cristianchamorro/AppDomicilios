@@ -18,31 +18,45 @@
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textAlignment="center"
-            android:textSize="35dp"
+            android:textSize="30dp"
+            android:textColor="@color/negro"
             android:textStyle="bold" />
 
         <ViewFlipper
             android:id="@+id/vf"
             android:layout_width="match_parent"
-            android:layout_height="300dp"/>
+            android:layout_height="242dp" />
 
-        <TextView
-            android:id="@+id/tvdescripcion"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/description"
-            android:textSize="15dp"
-            android:textAlignment="center"/>
+            android:layout_height="243dp">
+
+            <TextView
+                android:id="@+id/tvdescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="394dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textColor="@color/negro"
+                android:textSize="15dp" />
+
+        </ScrollView>
+
 
         <Button
             android:id="@+id/btncontinuar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:text="CONTINUAR"
             android:onClick="continuar"
-            android:textSize="33dp" />
+            android:text="@string/continuar"
+            android:textColor="@color/blanco"
+            android:textSize="30dp"
+            />
+
 
     </LinearLayout>
+
 
 </RelativeLayout>

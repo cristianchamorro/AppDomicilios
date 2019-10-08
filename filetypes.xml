@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="db" type="Native" />
+      <mapping ext="mp3" type="PLAIN_TEXT" />
+      <mapping ext="dbsugar" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

@@ -2,15 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/fondo_appdom"
     tools:context=".Intro">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/trans_white_rectangulo">
 
         <TextView
             android:id="@+id/tvtitulo"
@@ -18,44 +22,68 @@
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="30dp"
             android:textColor="@color/negro"
             android:textStyle="bold" />
 
         <ViewFlipper
             android:id="@+id/vf"
-            android:layout_width="match_parent"
-            android:layout_height="242dp" />
-
+            android:layout_width="410dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            />
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="243dp">
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
 
-            <TextView
-                android:id="@+id/tvdescripcion"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="394dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/description"
-                android:textColor="@color/negro"
-                android:textSize="15dp" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/trans_white_rectangulo"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+                <TextView
+                    android:id="@+id/tvdescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/description"
+                    android:textColor="@color/negro"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btncontinuar"
+                    android:layout_width="168dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/continuar_btn"
+                    android:gravity="center"
+                    android:onClick="continuar"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+
+                    android:text="@string/continuar"
+                    android:textColor="@color/blanco"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
 
         </ScrollView>
-
-
-        <Button
-            android:id="@+id/btncontinuar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:onClick="continuar"
-            android:text="@string/continuar"
-            android:textColor="@color/blanco"
-            android:textSize="30dp"
-            />
-
-
     </LinearLayout>
 
 

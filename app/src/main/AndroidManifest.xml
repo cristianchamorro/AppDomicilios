@@ -20,7 +20,7 @@
         <activity
             android:name=".NavegationDrawer"
             android:label="@string/title_activity_navegation_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

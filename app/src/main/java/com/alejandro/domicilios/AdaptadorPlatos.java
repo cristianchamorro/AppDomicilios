@@ -1,26 +1,63 @@
 package com.alejandro.domicilios;
-
+/*
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.ArrayList;
+import java.util.List;
+*/
+import android.view.ViewGroup;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+/*  extends FirestoreRecyclerOptions<Platos,AdaptadorPlatos.ViewHolder> */
 
-public class AdaptadorPlatos extends RecyclerView.Adapter<AdaptadorPlatos.ViewHolderPlatos> {
+public class AdaptadorPlatos{
+/*
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View viewPlatos= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_platos,null,false);
+        return new ViewHolder(viewPlatos);
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        TextView EtiNombre,EtiDescripcion;
+       ImageView fotoPlato;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            EtiNombre = itemView.findViewById(R.id.txt_nombre_producto);
+            EtiDescripcion = itemView.findViewById(R.id.txt_desc_producto);
+        }
+    }
+
 
     //Este se encarga de alimentar el item list personajes
-
+/*
     ArrayList<Platos>listaPlatos;
-
     public AdaptadorPlatos(ArrayList<Platos> listaPlatos) {
         this.listaPlatos = listaPlatos;
     }
+
+
+
+
 
     @NonNull
     @Override
@@ -59,5 +96,5 @@ public class AdaptadorPlatos extends RecyclerView.Adapter<AdaptadorPlatos.ViewHo
             FotoPlato = (ImageView) itemView.findViewById(R.id.imagen_producto);
 
         }
-    }
+    }*/
 }

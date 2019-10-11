@@ -32,8 +32,20 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'com.google.firebase:firebase-auth:16.1.0'
+
+
+    /*https://github.com/firebase/FirebaseUI-Android/releases
+    * consultar la documentacion*/
+    //implementacion del core 16,0,6
     implementation 'com.google.firebase:firebase-core:16.0.6'
-    implementation 'com.google.firebase:firebase-firestore:21.1.0'
+    // implementacion del firestore 17,1,4 para obtener datos de cloudfirebase
+    implementation 'com.google.firebase:firebase-firestore:17.1.4'
+    //libreria para cloudfirebase
+    implementation 'com.firebaseui:firebase-ui-firestore:4.3.2'
+
+
+
+
     implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'

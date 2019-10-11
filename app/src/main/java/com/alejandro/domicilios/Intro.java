@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import com.alejandro.domicilios.ui.home.HomeFragment;
+
 public class Intro extends AppCompatActivity {
 
     private TextView textView;
@@ -39,7 +41,7 @@ public class Intro extends AppCompatActivity {
         }
     }
     public void continuar (View view){
-        Intent intent = new Intent (this, MapsActivity.class);
+        Intent intent = new Intent (this, HomeFragment.class);
         startActivity(intent);
 
     }

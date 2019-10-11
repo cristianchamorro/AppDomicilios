@@ -6,6 +6,10 @@
           <option name="url" value="https://github.com/jeft1788/ControlAsistencia.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/cristianchamorro/AppDomicilios" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/prueba desarrollo web" />

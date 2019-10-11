@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/blanco">
+    android:background="@drawable/fondo_appdom_maps">
 
-    <TextView
+
+    <!--<TextView
         android:id="@+id/txtinicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,10 +40,75 @@
         android:textColor="@color/blanco"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="560dp" />
+        tools:layout_editor_absoluteY="560dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/trans_white_rectangulo">
+
+        <TextView
+            android:id="@+id/tvtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicioubicacion"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/negro"
+            android:textStyle="normal" />
 
 
-</LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/trans_white_rectangulo"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="433dp"
+                    android:layout_height="464dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:context=".MapsActivity"/>
+                <Button
+                    android:id="@+id/btncontinuar"
+                    android:layout_width="168dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/continuar_btn"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:onClick="continuar"
+                    android:text="@string/confirmar"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
 
 
 
